@@ -153,10 +153,10 @@ def distance(screenCenter, itemCenter):
 
 def getMoveDelay(distanceInPixels):
   y = distanceInPixels
-  k = 0.52 #micro
+  k = 0.52 
   x = (y / k)
   print(f"y = {y}, k={k} x={x}")
-  return x / 1000 #conversion to s
+  return x / 1000
 
 def move(direction, distance):
   delay = getMoveDelay(distance)
